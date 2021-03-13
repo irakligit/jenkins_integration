@@ -150,7 +150,7 @@ assert testCaseProperty == slurper.publisher
           </con:credentials>
           <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:jmsPropertyConfig/>
-          <con:parameters><entry key="ISBN" value="${#Project#ISBN}" xmlns="http://eviware.com/soapui/config"/></con:parameters>
+          <con:parameters><entry key="ISBN" value="$(#Project#ISBN)" xmlns="http://eviware.com/soapui/config"/></con:parameters>
           <con:parameterOrder><con:entry>ISBN</con:entry></con:parameterOrder>
         </con:restRequest></con:config></con:testStep><con:properties>
         <con:property>
