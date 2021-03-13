@@ -21,7 +21,7 @@
           <con:params/>
           <con:element xmlns:book="https://demoqa.com/BookStore/v1/Books">book:Response</con:element>
         </con:representation>
-        <con:request name="Request 1" id="d00b9bb6-33a5-42d8-aa6c-88005670ad56" mediaType="application/json">
+        <con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="d00b9bb6-33a5-42d8-aa6c-88005670ad56" mediaType="application/json">
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>
@@ -88,7 +88,7 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>https://demoqa.com</con:endpoint>
+            <con:endpoint>https://demoqa.comd</con:endpoint>
             <con:request/>
             <con:originalUri>https://demoqa.com/BookStore/v1/Books</con:originalUri>
             <con:assertion type="GroovyScriptAssertion" id="ecc8771a-cf35-449e-90a5-e27f5d20214a" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
@@ -120,10 +120,7 @@ def testCaseProperty = messageExchange.modelItem.testStep.testCase.setPropertyVa
       
       
       
-      <con:testStep type="groovy" name="groovytest" id="829d5171-5a5b-4746-8560-7b7e836a4115"><con:settings/><con:config><script>context.isbn = "9781449325862"
-
-testRunner.testCase.testSuite.project.setPropertyValue( "ISBN",context.isbn )
-</script></con:config></con:testStep><con:testStep type="restrequest" name="Book" id="6affa982-0b74-40e8-92ac-2eeaabc50a73"><con:settings/><con:config service="https://demoqa.com" resourcePath="/BookStore/v1/Book" methodName="Book 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Book" id="87f21dc0-5a4f-4a7e-a289-5f886e09f8d8" mediaType="application/json">
+      <con:testStep type="restrequest" name="Book" id="6affa982-0b74-40e8-92ac-2eeaabc50a73"><con:settings/><con:config service="https://demoqa.com" resourcePath="/BookStore/v1/Book" methodName="Book 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Book" id="87f21dc0-5a4f-4a7e-a289-5f886e09f8d8" mediaType="application/json">
           <con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings>
           <con:endpoint>https://demoqa.com</con:endpoint>
           <con:request/>
