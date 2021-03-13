@@ -142,7 +142,7 @@ assert globalProperty == slurper.title
 assert projectProperty == slurper.author
 assert testSuiteProperty == slurper.pages.toString()
 assert testCaseProperty != slurper.publisher
-</scriptText></con:configuration></con:assertion><con:credentials>
+</scriptText></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="707763e3-f2ba-445f-a1ba-cc5b68619abe" name="Response SLA"><con:configuration><SLA>100</SLA></con:configuration></con:assertion><con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
           <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
