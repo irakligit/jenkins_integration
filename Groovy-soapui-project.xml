@@ -88,7 +88,7 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>https://demoqa.comd</con:endpoint>
+            <con:endpoint>https://demoqa.com</con:endpoint>
             <con:request/>
             <con:originalUri>https://demoqa.com/BookStore/v1/Books</con:originalUri>
             <con:assertion type="GroovyScriptAssertion" id="ecc8771a-cf35-449e-90a5-e27f5d20214a" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
@@ -141,13 +141,13 @@ assert propertyProject == slurper.isbn
 assert globalProperty == slurper.title
 assert projectProperty == slurper.author
 assert testSuiteProperty == slurper.pages.toString()
-assert testCaseProperty == slurper.publisher
+assert testCaseProperty != slurper.publisher
 </scriptText></con:configuration></con:assertion><con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
           <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:jmsPropertyConfig/>
-          <con:parameters><entry key="ISBN" value="$(#Project#ISBN)" xmlns="http://eviware.com/soapui/config"/></con:parameters>
+          <con:parameters><entry key="ISBN" value="${#Project#ISBN}" xmlns="http://eviware.com/soapui/config"/></con:parameters>
           <con:parameterOrder><con:entry>ISBN</con:entry></con:parameterOrder>
         </con:restRequest></con:config></con:testStep><con:properties>
         <con:property>
