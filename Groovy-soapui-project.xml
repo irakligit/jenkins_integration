@@ -144,7 +144,7 @@ assert propertyProject == slurper.isbn
 assert globalProperty == slurper.title
 assert projectProperty == slurper.author
 assert testSuiteProperty == slurper.pages.toString()
-assert testCaseProperty == slurper.publisher1
+assert testCaseProperty == slurper.publisher
 </scriptText></con:configuration></con:assertion><con:credentials>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
